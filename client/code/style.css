@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+  border: 1px solid black;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  margin: 0 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#startBtn {
+  background-color: #98FFE3;
+  color: #1a1a1a;
+}
+
+#stopBtn {
+  background-color: #FFB6C1;
+  color: #1a1a1a;
+}
+
+#restartBtn {
+  background-color: #A7C7E7;
+  color: #1a1a1a;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.controls button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
